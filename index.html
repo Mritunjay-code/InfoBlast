@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Notice Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-circle">📋</div>
+        </div>
+        <nav>
+            <a href="#" onclick="showAllNotices()">Home</a>
+            <a href="#" onclick="showAllNotices()">Notices</a>
+            <a href="#" onclick="showHelp()">Help</a>
+            <div class="auth-section">
+                <div class="user-icon">👤</div>
+                <a href="#" class="signup-btn" onclick="showSignUp()">Sign Up</a>
+                <a href="#" class="signin-btn" onclick="showSignIn()">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="notice-header">
+            <h1>NOTICE BOARD</h1>
+            <p class="subtitle">Stay Updated with the latest College Notices</p>
+            <p class="description">Add new announcements, events, and exam updates anytime, anywhere.</p>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchBox" class="search-box" placeholder="Search" oninput="searchNotices()">
+            <button class="search-btn" onclick="searchNotices()">🔍</button>
+        </div>
+
+        <div class="categories">
+            <button class="category-btn" data-category="Examinations" onclick="filterByCategory('Examinations', this)">
+                <span class="category-icon">📝</span>
+                Examinations
+            </button>
+            <button class="category-btn" data-category="Academic Notices" onclick="filterByCategory('Academic Notices', this)">
+                <span class="category-icon">📚</span>
+                Academic Notices
+            </button>
+            <button class="category-btn" data-category="Events & Activities" onclick="filterByCategory('Events & Activities', this)">
+                <span class="category-icon">📅</span>
+                Events & Activities
+            </button>
+            <button class="category-btn" data-category="General Announcements" onclick="filterByCategory('General Announcements', this)">
+                <span class="category-icon">📢</span>
+                General Announcements
+            </button>
+        </div>
+
+        <div class="notices-container">
+            <div id="noticesContainer">
+                <!-- Notices will be populated by JavaScript -->
+            </div>
+            <button class="view-all-btn" onclick="showAllNotices()">View All Notices</button>
+        </div>
+    </div>
+
+    <!-- Modal for notice details -->
+    <div id="noticeModal" class="notice-modal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-category" id="modalCategory"></div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-date" id="modalDate"></p>
+            <div class="modal-content-text" id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
