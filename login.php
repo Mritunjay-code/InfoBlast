@@ -6,7 +6,7 @@ if ($_POST) {
     $password = $_POST['password'] ?? '';
 
     // Simple validation (in production, use secure password hashing)
-    if ($username === 'admin' && $password === 'password') {
+    if ($username === 'samarth' && $password === 'jjkk23') {
         $_SESSION['user'] = $username;
         header('Location: index.html');
         exit;
@@ -113,4 +113,5 @@ if ($_POST) {
         </div>
     </div>
 </body>
+
 </html>
