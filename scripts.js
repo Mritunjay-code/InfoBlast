@@ -4,42 +4,42 @@
                 title: "Semester End Examinations Schedule",
                 content: "The semester end examinations will commence from September 15, 2025. Students are advised to check the detailed timetable on the student portal. All examinations will be conducted in offline mode following COVID-19 protocols.",
                 category: "Examinations",
-                date: "24-08-2025"
+                date: "2025-08-24"
             },
             {
                 id: 2,
                 title: "Library Extended Hours During Exams",
                 content: "The college library will extend its working hours during the examination period. From September 1st to September 30th, the library will remain open from 8:00 AM to 10:00 PM on all working days.",
                 category: "Academic Notices",
-                date: "29-08-2025"
+                date: "2025-08-29"
             },
             {
                 id: 3,
                 title: "Annual Cultural Festival Registration",
                 content: "Registration for the annual cultural festival 'Vibrance 2025' is now open. Students can register for various events including dance, music, drama, and art competitions. Last date for registration is September 5, 2025.",
                 category: "Events & Activities",
-                date: "02-09-2025"
+                date: "2025-09-02"
             },
             {
                 id: 4,
                 title: "Merit Scholarship Applications Open",
                 content: "Applications for merit-based scholarships are now being accepted. Eligible students with CGPA above 8.5 can apply. Required documents include academic transcripts, income certificate, and recommendation letters. Deadline: August 30, 2025.",
                 category: "General Announcements",
-                date: "11-09-2025"
+                date: "2025-09-11"
             },
             {
                 id: 5,
                 title: "Guest Lecture on Artificial Intelligence",
                 content: "A guest lecture on 'Future of Artificial Intelligence in Healthcare' will be conducted by Dr. Sarah Johnson from MIT on September 10, 2025, at 2:00 PM in the main auditorium. All students are welcome to attend.",
                 category: "Academic Notices",
-                date: "15-09-2025"
+                date: "2025-09-15"
             },
             {
                 id: 6,
                 title: "Sports Day 2025 Registration",
                 content: "Annual Sports Day will be held on September 20, 2025. Students can register for various sports events including cricket, football, basketball, badminton, and athletics. Registration deadline is September 8, 2025.",
                 category: "Events & Activities",
-                date: "21-09-2025"
+                date: "2025-09-21"
             }
         ];
 
